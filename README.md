@@ -9,6 +9,11 @@
 - has_many :groups
 - has_many :messages
 
+## groups table
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+
 ## messages table
 |Column|Type|Options|
 |------|----|-------|
