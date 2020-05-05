@@ -8,16 +8,20 @@
 }
 
 .side-bar {
-  background-color: #2f3e51;
+  background-color: #253141;
   width: 300px;
   &__user-name {
     background-color: #253141;
     height: 100px;
   }
+  &__group-list {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+  }
 }
 
 .main-chat {
-  background-color: #fafafa;
+  background-color: #fff;
   width: calc(100vw - 300px);
   &__group-info {
     background-color: #ffffff;
