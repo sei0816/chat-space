@@ -23,6 +23,9 @@
       display: flex;
       justify-content: space-between;
       line-height: 20px;
+      p {
+        color: #fff;
+      }
       &__edit {
         margin-right: 5px;
       }
