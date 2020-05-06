@@ -25,6 +25,11 @@
       line-height: 20px;
       &__icons {
         display: flex;
+        li {
+          a {
+            color: white;
+          }
+        }
       }
     }
   }
