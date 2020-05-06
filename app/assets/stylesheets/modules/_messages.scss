@@ -67,6 +67,10 @@
     background-color: #ffffff;
     height: 100px;
     border-bottom: 1px solid #eee;
+    &__current-group {
+      font-size: 20px;
+      color: #333;
+    }
   }
   .message-list {
     background-color: #fafafa;
