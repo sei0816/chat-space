@@ -1,11 +1,14 @@
 .side-bar
   .side-bar__user-name
     .side-bar__user-name__top-items
-      .side-bar__user-name__top-items__name
+      %p.side-bar__user-name__top-items__name
         sei
-      .side-bar__user-name__top-items__icons
-        = link_to '#' do
-          %i.fa.fa-edit
-        = link_to '#' do
-          %i.fa.fa-cog
+      %ul.side-bar__user-name__top-items__icons
+        %li.side-bar__user-name__top-items__edit
+          = link_to '#' do
+            = icon('fas', 'edit')
+        %li.side-bar__user-name__top-items__setting
+          = link_to '#' do
+            = icon('fas', 'cog')
+            
   .side-bar__group-list
