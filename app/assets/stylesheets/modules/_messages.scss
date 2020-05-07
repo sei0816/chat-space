@@ -67,6 +67,10 @@
     background-color: #ffffff;
     height: 100px;
     border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
     &__current-group {
       font-size: 20px;
       color: #333;
