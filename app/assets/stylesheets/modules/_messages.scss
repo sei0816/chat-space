@@ -71,16 +71,19 @@
     justify-content: space-between;
     padding: 0 40px;
     align-items: center;
-    &__current-group {
-      font-size: 20px;
-      color: #333;
-      margin-bottom: 15px;
-    }
-    ul {
-      display: flex;
-      list-style: none;
-      li {
-        margin-left: 5px;
+    &__left {
+      margin-top: 35px;
+      &__current-group {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin-left: 5px;
+        }
       }
     }
   }
