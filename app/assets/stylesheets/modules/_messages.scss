@@ -99,9 +99,9 @@
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding-left: 40px;
+    padding-top: 35px;
     &__messaege-header {
-      padding-top: 35px;
-      padding-bottom: 12px;
+      margin-bottom: 12px;
       display: flex;
       &__current-name {
         color: #333;
@@ -111,6 +111,7 @@
       &__time-data {
         color: #999;
         font-size: 12px;
+        margin-left: 10px;
       }
     }
   }
