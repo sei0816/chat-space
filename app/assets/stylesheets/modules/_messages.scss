@@ -123,8 +123,16 @@
   .message-form {
     background-color: #d2d2d2;
     height: 90px;
+    padding: 20px 40px;
     .new-message {
       display: flex;
+      .type-message {
+        &__text {
+          line-height: 50px;
+          padding-left: 10px;
+          width: 100vh;
+        }
+      }
     }
   }
 }
