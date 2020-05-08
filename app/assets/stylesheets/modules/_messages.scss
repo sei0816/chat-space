@@ -123,5 +123,8 @@
   .message-form {
     background-color: #d2d2d2;
     height: 90px;
+    .new-message {
+      display: flex;
+    }
   }
 }
