@@ -1,3 +1,8 @@
+@mixin side_by_side {
+  display: flex;
+  justify-content: space-between;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,8 +23,7 @@
     &__top-items {
       width: 260px;
       margin: 0 20px;
-      display: flex;
-      justify-content: space-between;
+      // @include use_flex;
       line-height: 20px;
       p {
         color: #fff;
