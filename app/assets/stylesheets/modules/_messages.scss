@@ -70,7 +70,7 @@
   background-color: #fff;
   width: calc(100vw - 300px);
   .group-info {
-    background-color: #ffffff;
+    background-color: #fff;
     height: 100px;
     @include side_by_side;
     padding: 0 40px;
@@ -135,6 +135,7 @@
         background-color: #38aef0;
         color: white;
         margin-left: 15px;
+        cursor: pointer;
       }
       .type-message {
         position: relative;
