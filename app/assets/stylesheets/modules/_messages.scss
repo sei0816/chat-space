@@ -23,7 +23,7 @@
     &__top-items {
       width: 260px;
       margin: 0 20px;
-      // @include use_flex;
+      @include side_by_side;
       line-height: 20px;
       p {
         color: #fff;
@@ -72,8 +72,7 @@
   .group-info {
     background-color: #ffffff;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
+    @include side_by_side;
     padding: 0 40px;
     &__left {
       margin-top: 35px;
