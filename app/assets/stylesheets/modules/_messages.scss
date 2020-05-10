@@ -131,12 +131,21 @@
         width: 100px;
         background-color: #38aef0;
         color: white;
+        margin-left: 15px;
       }
       .type-message {
+        position: relative;
         &__text {
           line-height: 50px;
-          padding-left: 10px;
           width: 100vh;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+        }
+        &__file {
+          display: none;
+        }
+        &__image {
+          position: absolute;
         }
       }
     }
