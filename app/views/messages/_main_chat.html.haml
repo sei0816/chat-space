@@ -30,5 +30,7 @@
     .new-message
       .type-message
         %input.type-message__text{placeholder: "type a message",type: "text"}
-        .type-message__select-file
+        %label.type-message__image
+          = icon('far', 'image')
+          %input.type-message__file{type: "file", name: "message[image]", id: "img"}
       %input.new-message__send{type: "submit", name: "commit", value: "Send"}
