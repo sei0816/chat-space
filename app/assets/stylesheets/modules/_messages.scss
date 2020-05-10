@@ -43,19 +43,21 @@
   .group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    &__group-name {
-      padding-top: 20px;
-      margin-bottom: 5px;
-      font-size: 15px;
-    }
-    &__latest-message {
-      font-size: 11px;
-      margin-bottom: 40px;
-    }
-    p {
-      color: #fff;
-      margin-left: 20px;
-      margin-right: 20px;
+    .group {
+      margin-bottom: 20px;
+      &__group-name {
+        padding-top: 20px;
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+      &__latest-message {
+        font-size: 11px;
+      }
+      p {
+        color: #fff;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
     }
   }
 }
