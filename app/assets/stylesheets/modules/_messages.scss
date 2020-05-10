@@ -68,11 +68,9 @@
   .group-info {
     background-color: #ffffff;
     height: 100px;
-    border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    align-items: center;
     &__left {
       margin-top: 35px;
       &__current-group {
@@ -95,13 +93,13 @@
       padding: 0 20px;
       line-height: 40px;
       height: 40px;
+      margin-top: 28px;
     }
   }
   .message-list {
     background-color: #fafafa;
     height: calc(100vh - 190px);
-    padding-left: 40px;
-    padding-top: 35px;
+    padding: 35px 0 0 40px;
     &__messaege-header {
       margin-bottom: 12px;
       display: flex;
@@ -142,16 +140,16 @@
           width: 100vh;
           padding: 0 40px 0 10px;
           color: #434a54;
+          // border-style: none;
         }
         &__file {
           display: none;
         }
         &__image {
           position: absolute;
-          font-size: 1.5rem;
           cursor: pointer;
-          top: 10px;
           right: 10px;
+          // line-height: 50px;
         }
       }
     }
