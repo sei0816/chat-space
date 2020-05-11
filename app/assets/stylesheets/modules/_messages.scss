@@ -80,7 +80,7 @@
         @include Set_color_size(#999, 12px);
       }
     }
-    a {
+    .edit-btn {
       @include Set_color_size(#38aef0, 16px);
       text-decoration: none;
       border: 1px solid #38aef0;
