@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
 }
-@mixin height_padding($height, $padding) {
+@mixin Set_height_padding($height, $padding) {
   height: $height;
   padding: $padding;
 }
-@mixin color_size($color, $size) {
+@mixin Set_color_size($color, $size) {
   color: $color;
   font-size: $size;
 }
@@ -81,52 +81,52 @@ $white: #fff;
   width: calc(100vw - 300px);
   .group-info {
     background-color: $white;
-    @include height_padding(100px, 0 40px);
+    @include Set_height_padding(100px, 0 40px);
     @include side_by_side;
     &__left {
       margin-top: 35px;
       &__current-group {
-        @include color_size(#333, 20px);
+        @include Set_color_size(#333, 20px);
         margin-bottom: 15px;
       }
       ul {
         display: flex;
         list-style: none;
-        @include color_size(#999, 12px);
+        @include Set_color_size(#999, 12px);
       }
     }
     a {
-      @include color_size(#38aef0, 16px);
+      @include Set_color_size(#38aef0, 16px);
       text-decoration: none;
       border: 1px solid #38aef0;
-      @include height_padding(40px, 0 20px);
+      @include Set_height_padding(40px, 0 20px);
       line-height: 40px;
       margin-top: 28px;
     }
   }
   .message-list {
     background-color: #fafafa;
-    @include height_padding(calc(100vh - 190px), 35px 0 0 40px);
+    @include Set_height_padding(calc(100vh - 190px), 35px 0 0 40px);
     &__messaege-header {
       margin-bottom: 12px;
       display: flex;
       &__current-name {
-        @include color_size(#333, 16px);
+        @include Set_color_size(#333, 16px);
         font-weight: bold;
       }
       &__time-data {
-        @include color_size(#999, 12px);
+        @include Set_color_size(#999, 12px);
         margin-left: 10px;
       }
     }
     &__content {
-      @include color_size(#434A54, 14px);
+      @include Set_color_size(#434A54, 14px);
       padding-bottom: 46px;
     }
   }
   .message-form {
     background-color: #d2d2d2;
-    @include height_padding(90px, 20px 40px);
+    @include Set_height_padding(90px, 20px 40px);
     .new-message {
       display: flex;
       &__send {
