@@ -86,21 +86,18 @@ $white: #fff;
     &__left {
       margin-top: 35px;
       &__current-group {
-        font-size: 20px;
-        color: #333;
+        @include color_size(#333, 20px);
         margin-bottom: 15px;
       }
       ul {
         display: flex;
         list-style: none;
-        color: #999;
-        font-size: 12px;
+        @include color_size(#999, 12px);
       }
     }
     a {
-      font-size: 16px;
+      @include color_size(#38aef0, 16px);
       text-decoration: none;
-      color: #38aef0;
       border: 1px solid #38aef0;
       @include height_padding(40px, 0 20px);
       line-height: 40px;
@@ -114,19 +111,16 @@ $white: #fff;
       margin-bottom: 12px;
       display: flex;
       &__current-name {
-        color: #333;
-        font-size: 16px;
+        @include color_size(#333, 16px);
         font-weight: bold;
       }
       &__time-data {
-        color: #999;
-        font-size: 12px;
+        @include color_size(#999, 12px);
         margin-left: 10px;
       }
     }
     &__content {
-      color: #434A54;
-      font-size: 14px;
+      @include color_size(#434A54, 14px);
       padding-bottom: 46px;
     }
   }
