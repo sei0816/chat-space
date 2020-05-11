@@ -28,7 +28,7 @@ $white: #fff;
       @include side_by_side;
       line-height: 20px;
       p {
-        color: #fff ;
+        color: $white;
         font-size: 16px;
         font-weight: bold;
       }
@@ -39,7 +39,7 @@ $white: #fff;
         display: flex;
         li {
           a {
-            color: #fff;
+            color: $white;
             text-decoration: none;
           }
         }
@@ -60,7 +60,7 @@ $white: #fff;
         font-size: 11px;
       }
       p {
-        color: #fff;
+        color: $white;
         margin-left: 20px;
         margin-right: 20px;
       }
@@ -69,10 +69,10 @@ $white: #fff;
 }
 
 .main-chat {
-  background-color: #fff;
+  background-color: $white;
   width: calc(100vw - 300px);
   .group-info {
-    background-color: #fff;
+    background-color: $white;
     height: 100px;
     @include side_by_side;
     padding: 0 40px;
