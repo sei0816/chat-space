@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
 }
+@mixin height_padding($height, $padding) {
+  height: $height;
+  padding: $padding;
+}
 
 $white: #fff;
 
