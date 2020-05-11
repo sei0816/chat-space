@@ -77,9 +77,8 @@ $white: #fff;
   width: calc(100vw - 300px);
   .group-info {
     background-color: $white;
-    height: 100px;
+    @include height_padding(100px, 0 40px);
     @include side_by_side;
-    padding: 0 40px;
     &__left {
       margin-top: 35px;
       &__current-group {
@@ -99,16 +98,14 @@ $white: #fff;
       text-decoration: none;
       color: #38aef0;
       border: 1px solid #38aef0;
-      padding: 0 20px;
+      @include height_padding(40px, 0 20px);
       line-height: 40px;
-      height: 40px;
       margin-top: 28px;
     }
   }
   .message-list {
     background-color: #fafafa;
-    height: calc(100vh - 190px);
-    padding: 35px 0 0 40px;
+    @include height_padding(calc(100vh - 190px), 35px 0 0 40px);
     &__messaege-header {
       margin-bottom: 12px;
       display: flex;
@@ -131,8 +128,7 @@ $white: #fff;
   }
   .message-form {
     background-color: #d2d2d2;
-    height: 90px;
-    padding: 20px 40px;
+    @include height_padding(90px, 20px 40px);
     .new-message {
       display: flex;
       &__send {
