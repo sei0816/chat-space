@@ -3,6 +3,8 @@
   justify-content: space-between;
 }
 
+$white: #fff;
+
 * {
   box-sizing: border-box;
 }
@@ -26,7 +28,7 @@
       @include side_by_side;
       line-height: 20px;
       p {
-        color: #fff;
+        color: #fff ;
         font-size: 16px;
         font-weight: bold;
       }
