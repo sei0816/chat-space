@@ -6,6 +6,10 @@
   height: $height;
   padding: $padding;
 }
+@mixin color_size($color, $size) {
+  color: $color;
+  font-size: $size;
+}
 
 $white: #fff;
 
