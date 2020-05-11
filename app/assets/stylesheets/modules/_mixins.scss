@@ -1,0 +1,12 @@
+@mixin side_by_side {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin Set_height_padding($height, $padding) {
+  height: $height;
+  padding: $padding;
+}
+@mixin Set_color_size($color, $size) {
+  color: $color;
+  font-size: $size;
+}
