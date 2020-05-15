@@ -2,13 +2,13 @@
   .side-bar__user-name
     .side-bar__user-name__top-items
       %p.side-bar__user-name__top-items__name
-        sei
+        = current_user.name
       %ul.side-bar__user-name__top-items__icons
         %li.side-bar__user-name__top-items__edit
           = link_to '#' do
             = icon('far', 'edit')
         %li.side-bar__user-name__top-items__setting
-          = link_to '#' do
+          = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
   .group-list
     .group
