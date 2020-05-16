@@ -44,6 +44,9 @@
     height: calc(100vh - 100px);
     .group {
       margin-bottom: 20px;
+      .group-set {
+        text-decoration: none;
+      }
       &__group-name {
         padding-top: 20px;
         margin-bottom: 5px;
