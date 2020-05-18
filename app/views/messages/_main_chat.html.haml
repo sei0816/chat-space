@@ -28,9 +28,10 @@
         テストテスト
   .message-form
     .new-message
-      .type-message
-        %input.type-message__text{placeholder: "type a message",type: "text"}
-        %label.type-message__image
-          = icon('far', 'image')
-          %input.type-message__file{type: "file", name: "message[image]", id: "img"}
-      %input.new-message__send{type: "submit", name: "commit", value: "Send"}
+      = form_for [@group, @message] do |f|
+        .type-message
+          %input.type-message__text{placeholder: "type a message",type: "text"}
+          %label.type-message__image
+            = icon('far', 'image')
+            %input.type-message__file{type: "file", name: "message[image]", id: "img"}
+        %input.new-message__send{type: "submit", name: "commit", value: "Send"}
