@@ -9,7 +9,7 @@
           sei
     = link_to '#', class: "edit-btn" do
       Edit
-  .message-list
+  .messages
     = render @messages
   .message-form
     = form_for [@group, @message] do |f|
