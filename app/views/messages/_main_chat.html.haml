@@ -5,8 +5,9 @@
         = @group.name
       %ul.group-info__left__member-list
         Member：
-        %li.group-info__left__member-list__member-first
-          sei
+        - @group.users.each do |user|
+          %li.group-info__left__member-list__member-first
+            = user.name
     = link_to '#', class: "edit-btn" do
       Edit
   .messages
