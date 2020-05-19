@@ -2,35 +2,22 @@
   .group-info
     .group-info__left
       %p.group-info__left__current-group
-        test
+        = @group.name
       %ul.group-info__left__member-list
         Member：
-        %li.group-info__left__member-list__member-first
-          sei
-    = link_to '#', class: "edit-btn" do
+        - @group.users.each do |user|
+          %li.group-info__left__member-list__member-first
+            = user.name
+    = link_to edit_group_path(@group), class: "edit-btn" do
       Edit
-  .message-list
-    #message1
-      .message-list__messaege-header
-        %p.message-list__messaege-header__current-name
-          sei
-        %p.message-list__messaege-header__time-data
-          2020/05/07(Thu)21:51:06
-      .message-list__content
-        テスト
-    #message2
-      .message-list__messaege-header
-        %p.message-list__messaege-header__current-name
-          sei
-        %p.message-list__messaege-header__time-data
-          2020/05/07(Thu) 22:11:20
-      .message-list__content
-        テストテスト
+  .messages
+    = render @messages
   .message-form
-    .new-message
-      .type-message
-        %input.type-message__text{placeholder: "type a message",type: "text"}
-        %label.type-message__image
-          = icon('far', 'image')
-          %input.type-message__file{type: "file", name: "message[image]", id: "img"}
-      %input.new-message__send{type: "submit", name: "commit", value: "Send"}
+    = form_for [@group, @message] do |f|
+      .new-message
+        = f.text_field :content, class: 'text', placeholder: 'type a message'
+        .type-message
+          = f.label :image, class: 'type-message__image' do
+            = icon('far', 'image')
+            = f.file_field :image, class: 'file'
+        = f.submit 'Send', class: 'send'
