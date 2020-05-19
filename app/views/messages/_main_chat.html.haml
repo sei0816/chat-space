@@ -8,7 +8,7 @@
         - @group.users.each do |user|
           %li.group-info__left__member-list__member-first
             = user.name
-    = link_to '#', class: "edit-btn" do
+    = link_to edit_group_path(@group), class: "edit-btn" do
       Edit
   .messages
     = render @messages
