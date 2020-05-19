@@ -81,6 +81,9 @@
         display: flex;
         list-style: none;
         @include Set_color_size(#999, 12px);
+        li {
+          margin-right: 0.3rem;
+        }
       }
     }
     .edit-btn {
