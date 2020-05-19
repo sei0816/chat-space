@@ -92,24 +92,29 @@
       margin-top: 28px;
     }
   }
-  .message-list {
+  .messages {
+    overflow: auto;
     background-color: #fafafa;
     @include Set_height_padding(calc(100vh - 190px), 35px 0 0 40px);
-    &__messaege-header {
-      margin-bottom: 12px;
-      display: flex;
-      &__current-name {
-        @include Set_color_size(#333, 16px);
-        font-weight: bold;
-      }
-      &__time-data {
-        @include Set_color_size(#999, 12px);
-        margin-left: 10px;
-      }
-    }
-    &__content {
-      @include Set_color_size(#434A54, 14px);
+    .message-list {
       padding-bottom: 46px;
+      .message-header {
+        margin-bottom: 12px;
+        display: flex;
+        &__current-name {
+          @include Set_color_size(#333, 16px);
+          font-weight: bold;
+        }
+        &__time-data {
+          @include Set_color_size(#999, 12px);
+          margin-left: 10px;
+        }
+      }
+      .talk {
+        &__content {
+        @include Set_color_size(#434A54, 14px);
+        }
+      }
     }
   }
   .message-form {
