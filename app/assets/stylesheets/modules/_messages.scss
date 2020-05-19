@@ -115,33 +115,34 @@
   .message-form {
     background-color: #d2d2d2;
     @include Set_height_padding(90px, 20px 40px);
-    display: flex;
-    .send {
+    .new-message {
+      display: flex;
+      .send {
         height: 50px;
         width: 100px;
         background-color: #38aef0;
         color: white;
         margin-left: 15px;
         cursor: pointer;
-    }
-    .text {
+      }
+      .text {
         line-height: 50px;
         width: 100vh;
         padding: 0 40px 0 10px;
         color: #434a54;
         border-style: none;
       }
-    .type-message {
-      position: relative;
-      
-      &__file {
-        display: none;
-      }
-      &__image {
-        position: absolute;
-        cursor: pointer;
-        right: 10px;
-        line-height: 50px;
+      .type-message {
+        position: relative;
+        &__image {
+          position: absolute;
+          cursor: pointer;
+          right: 10px;
+          line-height: 50px;
+          .file {
+          display: none;
+          }
+        }
       }
     }
   }
