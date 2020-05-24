@@ -42,6 +42,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'
   gem 'carrierwave'
+  gem 'rspec-rails'
   gem 'mini_magick'
 end
 
