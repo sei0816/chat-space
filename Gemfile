@@ -44,6 +44,7 @@ group :development, :test do
   gem 'carrierwave'
   gem 'rspec-rails'
   gem 'mini_magick'
+  gem 'factory_bot_rails'
 end
 
 group :development do
