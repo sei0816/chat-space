@@ -5,5 +5,4 @@ FactoryBot.define do
     user
     group
   end
-  end
 end
