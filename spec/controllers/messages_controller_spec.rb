@@ -35,7 +35,7 @@ describe MessagesController do
 
   describe '#create' do
     let(:params) { { group_id: group.id, user_id: user.id, message: attributes_for(:message) } }
-    
+
     context 'ログインしている場合' do
       before do
         login user
@@ -46,9 +46,11 @@ describe MessagesController do
           post :create,
           params: params
         }
+
         it 'messageを保存すること' do
           expect{ subject }.to change(Message, :count).by(1)
         end
+
         it 'group_messages_pathへリダイレクトすること' do
           subject
           expect(response).to redirect_to(group_messages_path(group))
@@ -62,21 +64,24 @@ describe MessagesController do
           post :create,
           params: invalid_params
         }
+
         it 'messageを保存しないこと' do
           expect{ subject }.not_to change(Message, :count)
         end
-        it 'index.html.erbに遷移すること' do
+
+        it 'index.html.hamlに遷移すること' do
           subject
           expect(response).to render_template :index
         end
-        end
       end
+    end
 
-      context 'ログインしていない場合' do
-        it 'ログイン画面にリダイレクトすること' do
-          expect(response).to redirect_to(new_user_session_path)
-        end
+    context 'ログインしていない場合' do
+
+      it 'new_user_session_pathにリダイレクトすること' do
+        post :create, params: params
+        expect(response).to redirect_to(new_user_session_path)
       end
     end
   end
- end
+end
