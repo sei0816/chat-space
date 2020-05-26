@@ -63,6 +63,7 @@ describe MessagesController do
           params: invalid_params
         }
         it 'messageを保存しないこと' do
+          expect{ subject }.not_to change(Message, :count)
         end
         it 'index.html.erbに遷移すること' do
           get :new
