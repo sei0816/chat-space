@@ -40,11 +40,18 @@ describe MessagesController do
       before do
         login user
       end
-      it 'メッセージの保存ができたこと' do
-      end
-      it 'new.html.erbに遷移すること' do
-        get :new
-        expect(response).to render_template :new
+
+      context '保存に成功した場合' do
+        subject {
+          post :create,
+          params: params
+        }
+        it 'メッセージの保存ができたこと' do
+        end
+        it 'new.html.erbに遷移すること' do
+          get :new
+          expect(response).to render_template :new
+        end
       end
     end
 
