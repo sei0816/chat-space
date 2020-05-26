@@ -39,6 +39,8 @@ describe MessagesController do
       it 'メッセージの保存ができたこと' do
       end
       it 'new.html.erbに遷移すること' do
+        get :new
+        expect(response).to render_template :new
       end
     end
 
@@ -46,6 +48,8 @@ describe MessagesController do
       it 'メッセージの保存が行われなかったこと' do
       end
       it 'new.html.erbに遷移すること' do
+        get :new
+        expect(response).to render_template :new
       end
     end
 
