@@ -47,10 +47,11 @@ describe MessagesController do
           params: params
         }
         it 'messageを保存すること' do
+          expect{ subject }.to change(Message, :count).by(1)
         end
         it 'group_messages_pathへリダイレクトすること' do
-          get :new
-          expect(response).to render_template :new
+          # subject
+          # expect(response).to redirect_to(group_messages_path(group))
         end
       end
     end
