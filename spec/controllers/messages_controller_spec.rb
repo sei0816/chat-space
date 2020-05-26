@@ -46,9 +46,9 @@ describe MessagesController do
           post :create,
           params: params
         }
-        it 'メッセージの保存ができたこと' do
+        it 'messageを保存すること' do
         end
-        it 'new.html.erbに遷移すること' do
+        it 'group_messages_pathへリダイレクトすること' do
           get :new
           expect(response).to render_template :new
         end
