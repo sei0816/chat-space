@@ -50,6 +50,8 @@ describe MessagesController do
     end
 
     context 'ログインしていない場合' do
+      it 'ログイン画面にリダイレクトすること' do
+      end
     end
   end
  end
