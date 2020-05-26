@@ -43,6 +43,10 @@ describe MessagesController do
     end
 
     context 'ログインしているが、保存に失敗した場合' do
+      it 'メッセージの保存が行われなかったこと' do
+      end
+      it 'new.html.erbに遷移すること' do
+      end
     end
 
     context 'ログインしていない場合' do
