@@ -33,7 +33,7 @@ describe MessagesController do
 
   end
 
-  describe '#new' do
+  describe '#create' do
     
     context 'ログインしているかつ、保存に成功した場合' do
       it 'メッセージの保存ができたこと' do
