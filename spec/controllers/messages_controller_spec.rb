@@ -37,9 +37,9 @@ describe MessagesController do
     let(:params) { { group_id: group.id, user_id: user.id, message: attributes_for(:message) } }
     
     context 'ログインしている場合' do
-      # before do
-      #   login user
-      # end
+      before do
+        login user
+      end
       it 'メッセージの保存ができたこと' do
       end
       it 'new.html.erbに遷移すること' do
