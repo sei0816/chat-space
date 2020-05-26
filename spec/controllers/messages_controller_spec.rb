@@ -56,6 +56,7 @@ describe MessagesController do
       end
 
       context '保存に失敗した場合' do
+        let(:invalid_params) { { group_id: group.id, user_id: user.id, message: attributes_for(:message, content: nil, image: nil) } }
         it 'メッセージの保存が行われなかったこと' do
         end
         it 'new.html.erbに遷移すること' do
