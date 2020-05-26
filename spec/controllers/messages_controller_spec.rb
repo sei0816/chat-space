@@ -54,20 +54,20 @@ describe MessagesController do
           expect(response).to redirect_to(group_messages_path(group))
         end
       end
-    end
 
-    context 'ログインしているが、保存に失敗した場合' do
-      it 'メッセージの保存が行われなかったこと' do
+      context '保存に失敗した場合' do
+        it 'メッセージの保存が行われなかったこと' do
+        end
+        it 'new.html.erbに遷移すること' do
+          get :new
+          expect(response).to render_template :new
+        end
       end
-      it 'new.html.erbに遷移すること' do
-        get :new
-        expect(response).to render_template :new
-      end
-    end
 
-    context 'ログインしていない場合' do
-      it 'ログイン画面にリダイレクトすること' do
-        expect(response).to redirect_to(new_user_session_path)
+      context 'ログインしていない場合' do
+        it 'ログイン画面にリダイレクトすること' do
+          expect(response).to redirect_to(new_user_session_path)
+        end
       end
     end
   end
