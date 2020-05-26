@@ -32,4 +32,16 @@ describe MessagesController do
     end
 
   end
+
+  describe '#new' do
+    
+    context 'ログインしているかつ、保存に成功した場合' do
+    end
+
+    context 'ログインしているが、保存に失敗した場合' do
+    end
+
+    context 'ログインしていない場合' do
+    end
+  end
  end
