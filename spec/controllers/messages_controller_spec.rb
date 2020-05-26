@@ -36,6 +36,10 @@ describe MessagesController do
   describe '#new' do
     
     context 'ログインしているかつ、保存に成功した場合' do
+      it 'メッセージの保存ができたこと' do
+      end
+      it 'new.html.erbに遷移すること' do
+      end
     end
 
     context 'ログインしているが、保存に失敗した場合' do
