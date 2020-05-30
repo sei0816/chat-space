@@ -5,7 +5,7 @@ $(function(){
     var url = $(this).attr('action')
     $.ajax({
       url: url,
-      type: 'POST',  //同期通信でいう『HTTPメソッド』
+      type: 'POST',
       data: formData,  
       dataType: 'json',
       processData: false,
