@@ -1,4 +1,10 @@
 class UsersController < ApplicationController
+  def index
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
 
   def edit
   end
@@ -11,12 +17,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def index
-    respond_to do |format|
-      format.html
-      format.json
-    end
-  end
+  
 
   private
 
