@@ -3,10 +3,10 @@ $(function(){
     if (message.image) {
       var html = `<div class="message-list">
                     <div class="message-header">
-                      <div class="message-header__curent-name">
+                      <div class="message-header__current-name">
                         ${message.user_name}
                       </div>
-                      <div class="message-header__time-date">
+                      <div class="message-header__time-data">
                         ${message.created_at}
                       </div>
                     </div>
@@ -21,10 +21,10 @@ $(function(){
     } else {
       var html = `<div class="message-list">
                     <div class="message-header">
-                      <div class="message-header__curent-name">
+                      <div class="message-header__current-name">
                         ${message.user_name}
                       </div>
-                      <div class="message-header__time-date">
+                      <div class="message-header__time-data">
                         ${message.created_at}
                       </div>
                     </div>
