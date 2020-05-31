@@ -96,7 +96,7 @@
     }
   }
   .messages {
-    overflow: auto;
+    overflow: scroll;
     background-color: #fafafa;
     @include Set_height_padding(calc(100vh - 190px), 35px 0 0 40px);
     .message-list {
